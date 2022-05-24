@@ -1,4 +1,5 @@
-﻿
+﻿// Zaripov Riyaz 220th group, 24.05.22 Figures-3
+
 namespace GeometryFigures3
 {
     partial class form_addingFigure

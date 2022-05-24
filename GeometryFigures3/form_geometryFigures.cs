@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿// Zaripov Riyaz 220th group, 24.05.22 Figures-3
+
+using System;
 using System.Windows.Forms;
 
 namespace GeometryFigures3
@@ -39,14 +34,44 @@ namespace GeometryFigures3
                     form.panel_circle.Visible = true;
                     break;
 
+                default:
+                    MessageBox.Show("Выберите фигуру из предложенных в списке!",
+                                    "Предупреждение", MessageBoxButtons.OK, 
+                                    MessageBoxIcon.Warning);
+                    return;
+
             }
 
             form.ShowDialog();
+
             if (form.DialogResult == DialogResult.OK)
             {
                 tb_aboutFigures.AppendText(Figures.LastFigure().Draw()
                                           + Environment.NewLine);
             }
+        }
+
+        private void btn_saveFile_Click(object sender, EventArgs e)
+        {
+            if(saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                Figures.Save(saveFileDialog.FileName);
+            }
+        }
+
+        private void btn_loadFile_Click(object sender, EventArgs e)
+        {
+            if(loadFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                Figures.Load(loadFileDialog.FileName);
+                tb_aboutFigures.Text = Figures.Draw();
+            }
+        }
+
+        private void btn_clearFigures_Click(object sender, EventArgs e)
+        {
+            Figures.Clear();
+            tb_aboutFigures.Text = string.Empty;
         }
     }
 }

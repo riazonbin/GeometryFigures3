@@ -1,3 +1,5 @@
+// Zaripov Riyaz 220th group, 24.05.22 Figures-3
+
 using System;
 using System.Collections.Generic;
 using System.Linq;

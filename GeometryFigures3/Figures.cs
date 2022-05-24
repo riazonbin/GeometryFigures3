@@ -1,4 +1,4 @@
-﻿// Zaripov Riyaz 220th group, 27.04.22 Figures-2
+﻿// Zaripov Riyaz 220th group, 24.05.22 Figures-3
 
 using System;
 using System.Collections.Generic;
@@ -45,7 +45,7 @@ namespace GeometryFigures3
 
             foreach (var figure in listOfFigures)
             {
-                result += $"{figure.Draw()} \n";
+                result += $"{figure.Draw() + Environment.NewLine}";
             }
 
             return result;
