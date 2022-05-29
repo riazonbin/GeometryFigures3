@@ -48,6 +48,7 @@ namespace GeometryFigures3
             this.tb_aboutFigures.Multiline = true;
             this.tb_aboutFigures.Name = "tb_aboutFigures";
             this.tb_aboutFigures.ReadOnly = true;
+            this.tb_aboutFigures.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tb_aboutFigures.Size = new System.Drawing.Size(334, 321);
             this.tb_aboutFigures.TabIndex = 0;
             // 
