@@ -1,4 +1,4 @@
-﻿// Zaripov Riyaz 220th group, 24.05.22 Figures-3
+// Sharipov Kamil 220th group, 24.05.22 Figures-3
 
 using System;
 
